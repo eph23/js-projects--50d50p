@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    background: linear-gradient(to top left, #28b487, #7dd56f);
+}
+
+h1 {
+    margin: 10px;
+}
+
+.box {
+    background-color: #fff;
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+
+    transition: all 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+.box:nth-of-type(odd) {
+    transform: translateX(400%);
+}
+
+.box.show {
+    transform: translateX(0%);
+}
+
+.box h2 {
+    font-size: 45px;
+}
