@@ -7,11 +7,14 @@
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(to top left, #28b487, #7dd56f);
     font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to top left, #28b487, #7dd56f);
 }
 
 .default-heading {
