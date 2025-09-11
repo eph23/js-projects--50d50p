@@ -10,7 +10,7 @@ body {
     font-family: sans-serif;
     height: 100vh;
     background-repeat: no-repeat;
-    background: linear-gradient(to top left, #28b487, #7dd56f);
+    background: #f1f1f1;
 }
 
 h1 {
@@ -20,16 +20,16 @@ h1 {
     width: 100%;
     padding: 30px;
     margin: 50px 0 30px;
-    color: white;
 }
 
 .faq-container {
     max-width: 600px;
     margin: 0 auto;
+    padding: 50px 50px;
 }
 
 .faq {
-    background-color: transparent;
+    background-color: #f1f1f1;
     border: 1px solid #9fa4a8;
     border-radius: 10px;
     margin: 20px 0;
@@ -65,14 +65,55 @@ h1 {
 }
 
 .faq-title {
+    font-family: Raleway;
+    font-weight: 800;
     margin: 0 35px 0 0;
 }
 
 .faq-text {
     margin: 30px 0 0;
+    font-family: Raleway;
+    font-weight: 500;
     display: none;
 }
 
 .faq.active .faq-text {
     display: block;
+}
+
+.faq-toggle {
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.faq-toggle:focus {
+    outline: 0;
+}
+
+.faq-toggle .fa-times {
+    display: none;
+}
+.faq.active .faq-toggle .fa-times {
+    display: block;
+    color: #fff;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+    display: none;
+}
+
+.faq.active .faq-toggle {
+    background-color: #9fa4a8;
 }
