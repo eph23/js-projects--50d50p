@@ -1,18 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: monospace;
+    background-color: #ecf0f1;
+    font-family: "Roboto", sans-serif;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh;
-    background: #ecf0f1;
+    overflow: hidden;
+    margin: 0;
 }
 
 img {
@@ -40,10 +40,12 @@ img {
     background-color: #fff;
     padding: 30px;
 }
+
 .card-title {
     height: 20px;
     margin: 0;
 }
+
 .card-excerpt {
     color: #777;
     margin: 10px 0 20px;
@@ -71,4 +73,34 @@ img {
 .author-info small {
     color: #aaa;
     margin-top: 5px;
+}
+
+.animated-bg {
+    background-image: linear-gradient(
+        to right,
+        #f6f7f8 0%,
+        #edeef1 10%,
+        #f6f7f8 20%,
+        #f6f7f8 100%
+    );
+    background-size: 200% 100%;
+    animation: bgPos 1s linear infinite;
+}
+
+.animated-bg-text {
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0;
+    height: 10px;
+    width: 100%;
+}
+
+@keyframes bgPos {
+    0% {
+        background-position: 50% 0;
+    }
+
+    100% {
+        background-position: -150% 0;
+    }
 }
