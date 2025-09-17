@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+    color: #222;
+    padding-bottom: 50px;
+    /* overflow: hidden; */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    background-image: url("https://images.unsplash.com/photo-1542640244-7e672d6cef4e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.content h2,
+.content h3 {
+    font-size: 150%;
+    margin: 10px 0;
+}
+
+.content p {
+    color: #555;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
