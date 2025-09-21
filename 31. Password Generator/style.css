@@ -47,6 +47,7 @@ h2 {
 .result-container #result {
     word-wrap: break-word;
     max-width: calc(100% - 40px);
+    font-family: monospace;
 }
 
 .btn {
