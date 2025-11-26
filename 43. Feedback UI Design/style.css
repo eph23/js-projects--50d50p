@@ -28,6 +28,7 @@ body {
     align-items: center;
     padding: 30px;
     max-width: 400px;
+    text-align: center;
 }
 
 .panel-container strong {
@@ -85,7 +86,7 @@ body {
     transform: scale(0.98);
 }
 
-.fa-heart{
+.fa-heart {
     color: red;
     font-size: 30px;
     margin-bottom: 10px;
