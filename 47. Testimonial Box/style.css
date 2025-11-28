@@ -27,7 +27,7 @@ body {
     color: white;
 }
 
-.testimonial-container {
+.testimonials-container {
     background-color: #476ce4;
     color: #fff;
     border-radius: 15px;
@@ -37,23 +37,32 @@ body {
     position: relative;
 }
 
+.text-container {
+    position: relative;
+    padding: 20px 0;
+}
+
 .fa-quote {
     color: rgba(255, 255, 255, 0.3);
     font-size: 28px;
     position: absolute;
     top: 70px;
+    margin: 20px 0;
 }
 
 .fa-quote-right {
-    left: 40px;
+    left: -40px;
+    top: 0;
 }
 .fa-quote-left {
-    right: 40px;
+    right: -40px;
+    bottom: 0;
 }
 
 .testimonial {
     line-height: 20px;
     text-align: justify;
+    padding: 20px 0;
 }
 
 .user {
